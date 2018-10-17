@@ -63,9 +63,6 @@ domain_instances:
     bam_enabled:              true
     b2b_enabled:              true
     ess_enabled:              true
-    bam_enabled:              false
-    b2b_enabled:              false
-    ess_enabled:              false
     development_mode:         true
     log_output:               *logoutput
     repository_database_url:  "jdbc:oracle:thin:@soadb.example.com:1521/soarepos.example.com"
