@@ -45,9 +45,8 @@ http://10.10.10.21:7001/em with weblogic1 as password
 - oracle oracle
 
 ###software
-- JDK 1.8u161 jdk-8u65-linux-x64.tar.gz
-- JDK 8 JCE policy jce_policy-8.zip
-- fmw_12.2.1.3.0_infrastructure.jar
-- fmw_12.2.1.3.0_osb_Disk1_1of1.zip
-- fmw_12.2.1.3.0_soa_Disk1_1of1.zip
+- JDK: jdk-8u192-linux-x64.tar.gz
+- FMW Infrastructure: fmw_12.2.1.3.0_infrastructure.jar (uncompressed zip)
+- OSB: V886445-01.zip
+- SOA: V886440-01.zip
 
