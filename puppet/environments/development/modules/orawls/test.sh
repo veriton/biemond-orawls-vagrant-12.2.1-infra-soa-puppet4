@@ -12,6 +12,8 @@ rvm --version
 rvm install ruby-2.3.3
 rvm use ruby-2.3.3
 
+export PUPPET_VERSION=4.10.10
+
 set -e
 
 ruby -v
@@ -68,3 +70,20 @@ bundle exec rake ci:setup:rspec spec
 python
 
 pylint utils.py.erb --max-args=8 --additional-builtins='cd','create','cmo','File' --disable=C0111
+
+
+
+
+
+
+brew cask install puppetlabs/puppet/pdk
+brew cask upgrade pdk
+
+/opt/puppetlabs/pdk/bin/pdk convert
+/opt/puppetlabs/pdk/bin/pdk validate metadata,puppet
+/opt/puppetlabs/pdk/bin/pdk test unit
+
+
+/opt/puppetlabs/pdk/bin/pdk build
+
+
